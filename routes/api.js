@@ -5,7 +5,6 @@ const User = require('../models/user')
 
 
 
-
 //get a one user of call from db
 router.get('/call/:id', function(req, res, next){
     User.findById(req.params.id).then(doc => {
